@@ -28,6 +28,10 @@ p {
     margin: 20px;
 }
 
+img {
+    user-select: none;
+}
+
 #avatar {
     width: 250px;
     height: 250px;
