@@ -35,6 +35,11 @@ p {
     object-position: 0% 35%;
     border-radius: 150px;
     margin: 35px;
+    transition: transform .2s;
+}
+
+#avatar:hover {
+    transform: scale(1.02);
 }
 
 #github:hover {
@@ -68,6 +73,11 @@ ul {
 
 li {
     margin: 0px 10px;
+    transition: transform .2s;
+}
+
+li:hover {
+    transform: scale(1.15);
 }
 
 .logo-s {
