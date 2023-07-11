@@ -1,23 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Rampart+One');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Rampart+One&family=Overpass');
+
+/* Main */
 
 :root {
     background-color: palevioletred;
 }
 
-html {
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
     height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
+
+/* Nav */
+
+nav {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#hamburger {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hamburger-svg {
+    height: 64px;
+}
+
+#hamburger, #menu {
+    background: rgb(21,31,46);
+    border-radius: 6px;
+    box-shadow: 0 1px 20px rgba(43,50,88,0.2);
+}
+
+/* Texts */
 
 h1 {
     font-family: 'Rampart One';
     color: white;
     font-weight: normal;
     font-size: 5em;
-    margin: 0px;
+    margin: 0;
 }
 
 p {
@@ -25,26 +63,37 @@ p {
     color: white;
     font-weight: normal;
     font-size: 4em;
-    margin: 20px;
+    margin: 0;
 }
+
+span {
+    font-family: 'Overpass';
+    color: rgb(116,136,153);
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Images */
 
 img {
     user-select: none;
 }
 
-#avatar {
+.avatar {
     width: 250px;
     height: 250px;
     object-fit: cover;
     object-position: 0% 35%;
     border-radius: 150px;
     margin: 35px;
-    transition: transform .2s;
+    transition: transform 0.2s;
 }
 
-#avatar:hover {
+.avatar:hover {
     transform: scale(1.02);
 }
+
+/* Links */
 
 #github:hover {
     filter: brightness(0) saturate(100%) invert(7%) sepia(9%) saturate(289%) hue-rotate(314deg) brightness(101%) contrast(97%);
@@ -66,7 +115,7 @@ img {
     filter: brightness(0) saturate(100%) invert(44%) sepia(93%) saturate(1995%) hue-rotate(175deg) brightness(105%) contrast(103%);
 }
 
-ul {
+.links {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,12 +124,12 @@ ul {
     padding: 0;
 }
 
-li {
-    margin: 0px 10px;
-    transition: transform .2s;
+.link {
+    margin: 0 10px;
+    transition: transform 0.2s;
 }
 
-li:hover {
+.link:hover {
     transform: scale(1.15);
 }
 
