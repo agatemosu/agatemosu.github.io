@@ -3,6 +3,7 @@
 ## Credits
 
 - Cursor: [solstice23/osu-cursor](https://github.com/solstice23/osu-cursor/tree/v1.2.0)
+- Favicon: [Oshi no Ko in r/place](https://discord.gg/oshinoko)
 
 ### Logos
 
