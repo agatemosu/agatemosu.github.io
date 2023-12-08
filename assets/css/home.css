@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Rampart+One");
+
+::selection {
+  color: white;
+  background-color: pink;
+}
+
+html, body {
+  margin: 0;
+  background-color: palevioletred;
+}
+
+main {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Rampart One";
+  font-size: 4rem;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+}
+
+p {
+  font-family: "Darumadrop One";
+  font-size: 3rem;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+}
+
+img {
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+#avatar {
+  width: 200px;
+  height: 200px;
+  background-image: url("../avatar.jpg");
+  background-size: 300%;
+  background-position: 50% 55%;
+  border-radius: 150px;
+  margin: 35px;
+  transition: 0.2s;
+}
+
+#avatar:hover {
+  transform: scale(1.02);
+}
+
+#github:hover {
+  filter: brightness(0) saturate(100%) invert(7%) sepia(9%) saturate(289%) hue-rotate(314deg) brightness(101%) contrast(97%);
+}
+
+#twitter:hover {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(27%) saturate(2966%) hue-rotate(177deg) brightness(99%) contrast(90%);
+}
+
+#discord:hover {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(48%) saturate(4666%) hue-rotate(222deg) brightness(96%) contrast(97%);
+}
+
+#osu:hover {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(18%) saturate(3994%) hue-rotate(294deg) brightness(88%) contrast(87%);
+}
+
+#anilist:hover {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(93%) saturate(1995%) hue-rotate(175deg) brightness(105%) contrast(103%);
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+.link:hover {
+  transform: scale(1.15);
+}
+
+.logo-s {
+  width: 80px;
+}
+
+.logo-b {
+  width: 72px;
+}
+
+.logo-link {
+  cursor: none;
+}
