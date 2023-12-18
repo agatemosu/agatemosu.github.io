@@ -76,7 +76,9 @@ img {
 
 #links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
