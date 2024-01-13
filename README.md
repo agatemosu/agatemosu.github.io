@@ -4,7 +4,7 @@
 
 - Cursor: [solstice23/osu-cursor](https://github.com/solstice23/osu-cursor/tree/v1.2.0)
 - Favicon: [Oshi no Ko in r/place](https://discord.gg/oshinoko)
-- Avatar: [ぼっち・ざ・ろっく！ Blu-ray 4巻](https://bocchi.rocks/bddvd/vol4.html)
+- Avatar: [けろりら](https://twitter.com/BTR_anime/status/1577224253987950592)
 
 ### Logos
 

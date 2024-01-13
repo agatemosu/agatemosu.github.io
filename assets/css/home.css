@@ -18,7 +18,12 @@ main {
   justify-content: center;
 }
 
-h1 {
+img {
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.name {
   font-family: "Rampart One";
   font-size: 4rem;
   font-weight: normal;
@@ -26,7 +31,7 @@ h1 {
   margin: 0;
 }
 
-p {
+.desc {
   font-family: "Darumadrop One";
   font-size: 3rem;
   font-weight: normal;
@@ -34,23 +39,18 @@ p {
   margin: 0;
 }
 
-img {
-  -webkit-user-select: none;
-          user-select: none;
-}
-
-#avatar {
+.avatar {
   width: 200px;
   height: 200px;
-  background-image: url("../avatar.jpg");
-  background-size: 300%;
-  background-position: 50% 55%;
+  background-image: url("../avatar.png");
+  background-size: 100%;
+  background-position: 0% 0%;
   border-radius: 150px;
   margin: 35px;
   transition: 0.2s;
 }
 
-#avatar:hover {
+.avatar:hover {
   transform: scale(1.02);
 }
 
@@ -74,7 +74,7 @@ img {
   filter: brightness(0) saturate(100%) invert(44%) sepia(93%) saturate(1995%) hue-rotate(175deg) brightness(105%) contrast(103%);
 }
 
-#links {
+.links {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
