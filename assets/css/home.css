@@ -25,6 +25,10 @@ img {
 	user-select: none;
 }
 
+a {
+	color: white;
+}
+
 .name {
 	font-family: "Rampart One";
 	font-size: 4rem;
@@ -57,28 +61,23 @@ img {
 }
 
 #github:hover {
-	filter: brightness(0) saturate(100%) invert(7%) sepia(9%) saturate(289%)
-		hue-rotate(314deg) brightness(101%) contrast(97%);
+	color: #171515;
 }
 
 #twitter:hover {
-	filter: brightness(0) saturate(100%) invert(47%) sepia(27%) saturate(2966%)
-		hue-rotate(177deg) brightness(99%) contrast(90%);
+	color: #00acee;
 }
 
 #discord:hover {
-	filter: brightness(0) saturate(100%) invert(41%) sepia(48%) saturate(4666%)
-		hue-rotate(222deg) brightness(96%) contrast(97%);
+	color: #5865f2;
 }
 
 #osu:hover {
-	filter: brightness(0) saturate(100%) invert(32%) sepia(18%) saturate(3994%)
-		hue-rotate(294deg) brightness(88%) contrast(87%);
+	color: #ff66aa;
 }
 
 #anilist:hover {
-	filter: brightness(0) saturate(100%) invert(44%) sepia(93%) saturate(1995%)
-		hue-rotate(175deg) brightness(105%) contrast(103%);
+	color: #00aaff;
 }
 
 .links {
