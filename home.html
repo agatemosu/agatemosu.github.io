@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agatem</title>
-    <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="icon" href="assets/favicon.png" />
-    <script src="assets/js/osu-cursor.js"></script>
-  </head>
-  <body>
-    <main>
-      <h1 class="name">アガテム</h1>
-      <div>
-        <div class="avatar"></div>
-      </div>
-      <ul class="links">
-        <li class="link">
-          <a href="https://github.com/agatemosu" target="_blank" rel="noopener" id="github" class="logo-link">
-            <img src="assets/logos/github.svg" alt="GitHub" class="logo-b" />
-          </a>
-        </li>
-        <li class="link">
-          <a href="https://twitter.com/agatemosu" target="_blank" rel="noopener" id="twitter" class="logo-link">
-            <img src="assets/logos/twitter.svg" alt="Twitter" class="logo-s" />
-          </a>
-        </li>
-        <li class="link">
-          <a href="https://lanyard-visualizer.netlify.app/748341822434181231" target="_blank" rel="noopener" id="discord" class="logo-link">
-            <img src="assets/logos/discord.svg" alt="Discord" class="logo-s" />
-          </a>
-        </li>
-        <li class="link">
-          <a href="https://osu.ppy.sh/users/18202514" target="_blank" rel="noopener" id="osu" class="logo-link">
-            <img src="assets/logos/osu.svg" alt="osu!" class="logo-b" />
-          </a>
-        </li>
-        <li class="link">
-          <a href="https://anilist.co/user/Agatem" target="_blank" rel="noopener" id="anilist" class="logo-link">
-            <img src="assets/logos/anilist.svg" alt="AniList" class="logo-s" />
-          </a>
-        </li>
-      </ul>
-      <p class="desc">やっほ z3</p>
-    </main>
-    <script>
-      document.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-      });
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Agatem</title>
+		<link rel="stylesheet" href="assets/css/home.css" />
+		<link rel="icon" href="assets/favicon.png" />
+		<script src="assets/js/osu-cursor.js"></script>
+	</head>
+	<body>
+		<main>
+			<h1 class="name">アガテム</h1>
+			<div>
+				<div class="avatar"></div>
+			</div>
+			<ul class="links">
+				<li class="link">
+					<a
+						href="https://github.com/agatemosu"
+						target="_blank"
+						rel="noopener"
+						id="github"
+						class="logo-link"
+					>
+						<img src="assets/logos/github.svg" alt="GitHub" class="logo-b" />
+					</a>
+				</li>
+				<li class="link">
+					<a
+						href="https://twitter.com/agatemosu"
+						target="_blank"
+						rel="noopener"
+						id="twitter"
+						class="logo-link"
+					>
+						<img src="assets/logos/twitter.svg" alt="Twitter" class="logo-s" />
+					</a>
+				</li>
+				<li class="link">
+					<a
+						href="https://lanyard-visualizer.netlify.app/748341822434181231"
+						target="_blank"
+						rel="noopener"
+						id="discord"
+						class="logo-link"
+					>
+						<img src="assets/logos/discord.svg" alt="Discord" class="logo-s" />
+					</a>
+				</li>
+				<li class="link">
+					<a
+						href="https://osu.ppy.sh/users/18202514"
+						target="_blank"
+						rel="noopener"
+						id="osu"
+						class="logo-link"
+					>
+						<img src="assets/logos/osu.svg" alt="osu!" class="logo-b" />
+					</a>
+				</li>
+				<li class="link">
+					<a
+						href="https://anilist.co/user/Agatem"
+						target="_blank"
+						rel="noopener"
+						id="anilist"
+						class="logo-link"
+					>
+						<img src="assets/logos/anilist.svg" alt="AniList" class="logo-s" />
+					</a>
+				</li>
+			</ul>
+			<p class="desc">やっほ z3</p>
+		</main>
+		<script>
+			document.addEventListener("contextmenu", function (event) {
+				event.preventDefault();
+			});
 
-      document.addEventListener("dragstart", function (event) {
-        event.preventDefault();
-      });
+			document.addEventListener("dragstart", function (event) {
+				event.preventDefault();
+			});
 
-      new osuCursor();
-    </script>
-  </body>
+			new osuCursor();
+		</script>
+	</body>
 </html>
