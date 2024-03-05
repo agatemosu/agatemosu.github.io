@@ -49,7 +49,7 @@ img {
 	background-position: 0% 0%;
 	border-radius: 150px;
 	margin: 35px;
-	transition: 0.2s;
+	transition: 200ms;
 }
 
 .avatar:hover {
@@ -93,7 +93,7 @@ img {
 
 .link {
 	margin: 0 10px;
-	transition: 0.2s;
+	transition: 200ms;
 }
 
 .link:hover {
