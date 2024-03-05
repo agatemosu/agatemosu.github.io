@@ -8,22 +8,9 @@
 html,
 body {
 	margin: 0;
-	background: radial-gradient(
-			circle at 50% 100%,
-			rgba(200, 0, 0, 0.5),
-			rgba(0, 0, 0, 0) 70.71%
-		),
-		radial-gradient(
-			circle at 93.3% 25%,
-			rgba(0, 0, 200, 0.5),
-			rgba(0, 0, 0, 0) 70.71%
-		),
-		radial-gradient(
-				circle at 6.7% 25%,
-				rgba(216, 112, 147, 0.7),
-				rgba(0, 0, 0, 0) 70.71%
-			)
-			pink;
+	background: radial-gradient(circle at 50% 100%, #c8000080, transparent),
+		radial-gradient(circle at 93.3% 25%, #0000c880, transparent),
+		radial-gradient(circle at 6.7% 25%, #d8709380, transparent) pink;
 }
 
 main {
