@@ -20,11 +20,6 @@ main {
 	justify-content: center;
 }
 
-img {
-	-webkit-user-select: none;
-	user-select: none;
-}
-
 a {
 	color: white;
 }
