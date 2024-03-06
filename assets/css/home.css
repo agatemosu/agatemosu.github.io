@@ -1,23 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Rampart+One");
 
 ::selection {
-	color: white;
 	background-color: hsl(340, 60%, 75%);
+	color: white;
 }
 
 body {
 	margin: 0;
-	background: radial-gradient(circle at 50% 100%, #c8000080, transparent),
+	background:
+		radial-gradient(circle at 50% 100%, #c8000080, transparent),
 		radial-gradient(circle at 93.3% 25%, #0000c880, transparent),
 		radial-gradient(circle at 6.7% 25%, #d8709380, transparent) pink;
 }
 
 main {
+	display: grid;
+	place-content: center;
 	height: 100dvh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
 }
 
 a {
@@ -25,34 +25,37 @@ a {
 }
 
 .name {
-	font-family: "Rampart One";
-	font-size: 4rem;
-	font-weight: normal;
-	color: white;
 	margin: 0;
+	color: white;
+	font-weight: normal;
+	font-size: 4rem;
+	font-family: "Rampart One";
 }
 
 .desc {
-	font-family: "Darumadrop One";
-	font-size: 3rem;
-	font-weight: normal;
-	color: white;
 	margin: 0;
+	color: white;
+	font-weight: normal;
+	font-size: 3rem;
+	font-family: "Darumadrop One";
+}
+
+.avatar-container {
+	margin: 30px auto;
 }
 
 .avatar {
+	transition: 200ms;
+	border-radius: 150px;
+	background-image: url("../avatar.png");
+	background-position: 0% 0%;
+	background-size: 100%;
 	width: 200px;
 	height: 200px;
-	background-image: url("../avatar.png");
-	background-size: 100%;
-	background-position: 0% 0%;
-	border-radius: 150px;
-	margin: 35px;
-	transition: 200ms;
-}
 
-.avatar:hover {
-	transform: scale(1.02);
+	&:hover {
+		transform: scale(1.02);
+	}
 }
 
 #github:hover {
@@ -78,20 +81,22 @@ a {
 .links {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	align-items: center;
+	gap: 15px;
 }
 
 .link {
-	margin: 0 10px;
 	transition: 200ms;
-}
 
-.link:hover {
-	transform: scale(1.15);
+	&:hover {
+		transform: scale(1.15);
+	}
+
+	& > a {
+		display: grid;
+		cursor: none;
+	}
 }
 
 .logo-s {
@@ -100,9 +105,4 @@ a {
 
 .logo-b {
 	width: 72px;
-}
-
-.logo-link {
-	cursor: none;
-	display: grid;
 }
