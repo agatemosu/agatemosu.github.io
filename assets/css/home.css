@@ -7,8 +7,7 @@
 
 body {
 	margin: 0;
-	background:
-		radial-gradient(circle at 50% 100%, #c8000080, transparent),
+	background: radial-gradient(circle at 50% 100%, #c8000080, transparent),
 		radial-gradient(circle at 93.3% 25%, #0000c880, transparent),
 		radial-gradient(circle at 6.7% 25%, #d8709380, transparent) pink;
 }
