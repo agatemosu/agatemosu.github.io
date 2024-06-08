@@ -1,11 +1,52 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+---
+import "@fontsource/darumadrop-one";
+import "@fontsource/rampart-one";
+import Avatar from "../components/Avatar.astro";
+import Icons from "../components/Icons.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<main>
+		<h1 class="name">アガテム</h1>
+		<Avatar />
+		<Icons />
+		<p class="desc">やっほ z3</p>
+	</main>
+</Layout>
+<style is:global>
+	main {
+		display: grid;
+		place-content: center;
+		height: 100dvh;
+		text-align: center;
+	}
+
+	a {
+		color: white;
+	}
+
+	.name {
+		margin: 0;
+		color: white;
+		font-weight: normal;
+		font-size: 4rem;
+		font-family: "Rampart One", system-ui;
+	}
+
+	.desc {
+		margin: 0;
+		color: white;
+		font-weight: normal;
+		font-size: 3rem;
+		font-family: "Darumadrop One", system-ui;
+	}
+
+	.circle-logo {
+		width: 72px;
+	}
+
+	.large-logo {
+		width: 80px;
+	}
+</style>

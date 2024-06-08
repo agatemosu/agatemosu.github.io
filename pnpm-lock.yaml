@@ -11,6 +11,12 @@ importers:
       '@astrojs/check':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.4.5)
+      '@fontsource/darumadrop-one':
+        specifier: ^5.0.19
+        version: 5.0.19
+      '@fontsource/rampart-one':
+        specifier: ^5.0.19
+        version: 5.0.19
       astro:
         specifier: ^4.9.3
         version: 4.9.3(typescript@5.4.5)
@@ -465,6 +471,12 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/darumadrop-one@5.0.19':
+    resolution: {integrity: sha512-T13Wq3/VP4KTVpyb+ddXec9NBCV/HSJ1DYb+ZQO58W+LCyjRELuxAx0CRD/xl1CRAvrG1Lgp/8ixfNMajY0a3A==}
+
+  '@fontsource/rampart-one@5.0.19':
+    resolution: {integrity: sha512-72/BkvI+t2j8j9m1FrUNwRfnYWTs8NtyFGRwBNoopYjtWonG8ExxIgNSe5Me/3/x1CvyZbaChR3slOktZAGkeg==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -2455,6 +2467,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.4':
     optional: true
+
+  '@fontsource/darumadrop-one@5.0.19': {}
+
+  '@fontsource/rampart-one@5.0.19': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:

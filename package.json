@@ -10,8 +10,10 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^4.9.3",
 		"@astrojs/check": "^0.7.0",
+		"@fontsource/darumadrop-one": "^5.0.19",
+		"@fontsource/rampart-one": "^5.0.19",
+		"astro": "^4.9.3",
 		"typescript": "^5.4.5"
 	}
 }

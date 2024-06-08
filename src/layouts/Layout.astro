@@ -1,0 +1,48 @@
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Agatem</title>
+		<link rel="icon" href="./favicon.png" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<script>
+	function getRandomColor(alpha = 0.5) {
+		const hue = Math.floor(Math.random() * 120) + 240;
+		const saturation = Math.floor(Math.random() * 10) + 40;
+		const lightness = Math.floor(Math.random() * 10) + 40;
+
+		return `hsl(${hue}deg ${saturation}% ${lightness}% / ${alpha})`;
+	}
+
+	function generateRandomBackground() {
+		const color1 = getRandomColor();
+		const color2 = getRandomColor();
+		const color3 = getRandomColor();
+		document.body.style.background = `
+			radial-gradient(circle at 50% 100%, ${color1}, transparent),
+			radial-gradient(circle at 93.3% 25%, ${color2}, transparent),
+			radial-gradient(circle at 6.7% 25%, ${color3}, transparent) pink
+		`;
+	}
+
+	generateRandomBackground();
+</script>
+<style is:global>
+	::selection {
+		background-color: hsl(340deg 60% 75%);
+		color: white;
+	}
+
+	body {
+		margin: 0;
+		background:
+			radial-gradient(circle at 50% 100%, #c8000080, transparent),
+			radial-gradient(circle at 93.3% 25%, #0000c880, transparent),
+			radial-gradient(circle at 6.7% 25%, #d8709380, transparent) pink;
+	}
+</style>

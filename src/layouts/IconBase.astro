@@ -1,0 +1,38 @@
+---
+interface Props {
+	href: string;
+	name: string;
+	color: string;
+}
+
+const { href, name, color } = Astro.props;
+---
+
+<article>
+	<a
+		href={href}
+		target="_blank"
+		rel="nofollow noopener noreferrer"
+		aria-label={name}
+	>
+		<slot />
+	</a>
+</article>
+<style define:vars={{ color }}>
+	article {
+		transition: 200ms;
+
+		&:hover {
+			transform: scale(1.15);
+		}
+
+		& > a {
+			display: grid;
+			transition: 200ms;
+
+			&:hover {
+				color: var(--color);
+			}
+		}
+	}
+</style>
