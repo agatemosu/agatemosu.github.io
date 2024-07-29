@@ -24,15 +24,15 @@ const { href, name, color } = Astro.props;
 
 		&:hover {
 			transform: scale(1.15);
+
+			& > a {
+				color: var(--color);
+			}
 		}
 
 		& > a {
 			display: grid;
 			transition: 200ms;
-
-			&:hover {
-				color: var(--color);
-			}
 		}
 	}
 </style>
