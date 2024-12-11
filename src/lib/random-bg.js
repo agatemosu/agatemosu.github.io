@@ -10,11 +10,9 @@ function generateRandomBackground() {
 	const color1 = getRandomColor();
 	const color2 = getRandomColor();
 	const color3 = getRandomColor();
-	document.body.style.background = `
-		radial-gradient(circle at 50% 100%, ${color1}, transparent),
-		radial-gradient(circle at 93.3% 25%, ${color2}, transparent),
-		radial-gradient(circle at 6.7% 25%, ${color3}, transparent) pink
-	`;
+	document.body.style.setProperty("--bg-color-1", color1);
+	document.body.style.setProperty("--bg-color-2", color2);
+	document.body.style.setProperty("--bg-color-3", color3);
 }
 
 generateRandomBackground();
