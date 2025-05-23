@@ -22,11 +22,13 @@ const { href, name, color } = Astro.props;
 	a {
 		display: grid;
 		transition: 200ms;
+		color: white;
 
 		&:hover,
 		&:focus {
 			transform: scale(1.15);
 			color: var(--color);
+			outline: none;
 		}
 	}
 </style>

@@ -1,6 +1,4 @@
 ---
-import "@fontsource/darumadrop-one";
-import "@fontsource/rampart-one";
 import Avatar from "../components/Avatar.astro";
 import Icons from "../components/Icons.astro";
 import Layout from "../layouts/Layout.astro";
@@ -14,16 +12,12 @@ import Layout from "../layouts/Layout.astro";
 		<p class="desc">Mi hora es: <my-time-zone timezone="Europe/Madrid" /></p>
 	</main>
 </Layout>
-<style is:global>
+<style>
 	main {
 		display: grid;
 		place-content: center;
 		height: 100dvh;
 		text-align: center;
-	}
-
-	a {
-		color: white;
 	}
 
 	.name {
@@ -40,13 +34,5 @@ import Layout from "../layouts/Layout.astro";
 		font-weight: normal;
 		font-size: 3rem;
 		font-family: "Darumadrop One", system-ui;
-	}
-
-	.circle-logo {
-		width: 72px;
-	}
-
-	.large-logo {
-		width: 80px;
 	}
 </style>

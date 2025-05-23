@@ -1,3 +1,8 @@
+---
+import "@fontsource/darumadrop-one";
+import "@fontsource/rampart-one";
+---
+
 <html lang="ja">
 	<head>
 		<meta charset="utf-8" />
@@ -18,10 +23,6 @@
 		color: white;
 	}
 
-	:focus-visible {
-		outline: none;
-	}
-
 	body {
 		--bg-color-1: #c8000080;
 		--bg-color-2: #0000c880;
@@ -32,5 +33,13 @@
 			radial-gradient(circle at 50% 100%, var(--bg-color-1), transparent),
 			radial-gradient(circle at 93.3% 25%, var(--bg-color-2), transparent),
 			radial-gradient(circle at 6.7% 25%, var(--bg-color-3), transparent) pink;
+	}
+
+	.circle-logo {
+		width: 72px;
+	}
+
+	.large-logo {
+		width: 80px;
 	}
 </style>
