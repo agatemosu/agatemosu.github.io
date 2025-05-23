@@ -7,6 +7,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
 	<main>
 		<h1 class="name">アガテム</h1>
+		<small class="prons">she/her</small>
 		<Avatar />
 		<Icons />
 		<p class="desc">Mi hora es: <my-time-zone timezone="Europe/Madrid" /></p>
@@ -18,20 +19,25 @@ import Layout from "../layouts/Layout.astro";
 		place-content: center;
 		height: 100dvh;
 		text-align: center;
+		color: white;
 	}
 
 	.name {
 		margin: 0;
-		color: white;
+		line-height: 1;
 		font-weight: normal;
 		font-size: 4rem;
 		font-family: "Rampart One", system-ui;
 	}
 
+	.prons {
+		margin: 0;
+		font-size: 2rem;
+		font-family: "Darumadrop One", system-ui;
+	}
+
 	.desc {
 		margin: 0;
-		color: white;
-		font-weight: normal;
 		font-size: 3rem;
 		font-family: "Darumadrop One", system-ui;
 	}
